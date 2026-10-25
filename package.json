@@ -1,0 +1,29 @@
+{
+  "name": "@pixelfic/ui",
+  "version": "0.4.0",
+  "description": "Pixelfic UI Kit for Framer plugins: design tokens (CSS, DTCG JSON, TS) and React components. Source: Figma file N7pg94Ht36iCcqt37tyyJZ, page \ud83c\udfa8 DS.",
+  "type": "module",
+  "private": true,
+  "exports": {
+    ".": "./react/index.ts",
+    "./tokens.css": "./css/tokens.css",
+    "./kit.css": "./react/kit.css",
+    "./framer-fallback.css": "./css/framer-fallback.css",
+    "./tokens.json": "./tokens/tokens.json",
+    "./tokens": "./tokens/tokens.ts",
+    "./base.css": "./css/base.css"
+  },
+  "files": [
+    "css",
+    "react",
+    "tokens",
+    "HANDOFF.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build:tokens": "node scripts/build-tokens.mjs"
+  },
+  "peerDependencies": {
+    "react": "^18"
+  }
+}

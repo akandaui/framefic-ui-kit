@@ -1,0 +1,2 @@
+/* Load INSTEAD of importing framer.css directly: puts Framer base styles in a lower layer so kit components win. */
+@import "framer-plugin/framer.css" layer(framer);
